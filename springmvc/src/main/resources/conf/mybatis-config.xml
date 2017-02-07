@@ -6,9 +6,9 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<!-- 命名空间 -->
 
 	<typeAliases>
-	<package name = "cn.springmvc.model.model"/>
-	<!-- <typeAlias alias="User" type="cn.springmvc.model.User" /> -->
-	<!-- <typeAlias alias="Book" type="cn.springmvc.model.Book" /> -->
+		<package name="cn.springmvc.model" />
+		<!-- <typeAlias alias="User" type="cn.springmvc.model.User" /> -->
+		<!-- <typeAlias alias="Book" type="cn.springmvc.model.Book" /> -->
 	</typeAliases>
 
 

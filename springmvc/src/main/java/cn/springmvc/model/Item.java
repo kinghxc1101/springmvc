@@ -1,9 +1,11 @@
 package cn.springmvc.model;
 
+import java.util.List;
+
 public class Item {
 	private Book book;
 	private User user;
-	private Book[] bookList;
+	private List<Book> bookList;
 	private User[] userList;
 
 	public Book getBook() {
@@ -22,11 +24,11 @@ public class Item {
 		this.user = user;
 	}
 
-	public Book[] getBookList() {
+	public List<Book> getBookList() {
 		return bookList;
 	}
 
-	public void setBookList(Book[] bookList) {
+	public void setBookList(List<Book> bookList) {
 		this.bookList = bookList;
 	}
 

@@ -27,14 +27,16 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:if test="${item.bookList !=null}" >
+						<c:if test="${item.bookList !=null}">
 							<c:forEach var="book" items="${item.bookList}">
-								<tr>
-									<td>${book.fno}</td>
-									<td>${book.fname}</td>
-									<td>${book.fauthor}</td>
-									<td>${book.fprice}</td>
-								</tr>
+								<c:if test="${book.fprice<50}">
+									<tr class="active">
+										<td>${book.fno}</td>
+										<td>${book.fname}</td>
+										<td>${book.fauthor}</td>
+										<td>${book.fprice}</td>
+									</tr>
+								</c:if>
 							</c:forEach>
 						</c:if>
 					</tbody>

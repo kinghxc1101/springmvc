@@ -3,7 +3,7 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.springmvc.dao.BookDao">
-	<select id="onQuery" resultType="cn.springmvc.model.Book">
+	<select id="onQuery" resultType="Book">
 		select * from s_book
 	</select>
 </mapper>
